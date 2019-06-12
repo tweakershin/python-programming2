@@ -105,3 +105,9 @@ venv.bak/
 
 .ipynb_checkpoints
 mydb.conf.txt
+
+*.jpeg
+*.jpg
+*.png
+*.txt
+*.csv
