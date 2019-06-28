@@ -112,3 +112,5 @@ mydb.conf.txt
 *.txt
 
 *.mp3
+
+**/data/openml

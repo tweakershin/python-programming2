@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="alcohol <= 10.85\nentropy = 1.837\nsamples = 5197\nvalue = [24, 173, 1710, 2269, 863, 154, 4]", fillcolor="#dffbfa"] ;
+1 [label="volatile acidity <= 0.267\nentropy = 1.616\nsamples = 3346\nvalue = [15, 129, 1502, 1404, 264, 31, 1]", fillcolor="#f5fef6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="volatile acidity <= 0.207\nentropy = 1.646\nsamples = 1354\nvalue = [6, 22, 382, 723, 193, 28, 0]", fillcolor="#baf6f5"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+296 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 296 ;
+679 [label="alcohol <= 9.85\nentropy = 1.449\nsamples = 1992\nvalue = [9, 107, 1120, 681, 71, 3, 1]", fillcolor="#bdf6c3"] ;
+1 -> 679 ;
+680 [label="(...)", fillcolor="#C0C0C0"] ;
+679 -> 680 ;
+1199 [label="(...)", fillcolor="#C0C0C0"] ;
+679 -> 1199 ;
+1592 [label="alcohol <= 11.617\nentropy = 1.835\nsamples = 1851\nvalue = [9, 44, 208, 865, 599, 123, 3]", fillcolor="#d5f9f9"] ;
+0 -> 1592 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+1593 [label="citric acid <= 0.235\nentropy = 1.856\nsamples = 895\nvalue = [7, 33, 157, 438, 226, 34, 0]", fillcolor="#c0f7f6"] ;
+1592 -> 1593 ;
+1594 [label="(...)", fillcolor="#C0C0C0"] ;
+1593 -> 1594 ;
+1679 [label="(...)", fillcolor="#C0C0C0"] ;
+1593 -> 1679 ;
+2106 [label="free sulfur dioxide <= 21.5\nentropy = 1.712\nsamples = 956\nvalue = [2, 11, 51, 427, 373, 89, 3]", fillcolor="#edfdfc"] ;
+1592 -> 2106 ;
+2107 [label="(...)", fillcolor="#C0C0C0"] ;
+2106 -> 2107 ;
+2312 [label="(...)", fillcolor="#C0C0C0"] ;
+2106 -> 2312 ;
+}
