@@ -114,3 +114,4 @@ mydb.conf.txt
 *.mp3
 
 **/data/openml
+**/hkib/*
